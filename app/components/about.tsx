@@ -1,4 +1,4 @@
-
+import React from "react";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 
 
