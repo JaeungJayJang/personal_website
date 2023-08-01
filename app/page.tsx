@@ -1,15 +1,16 @@
 import React from "react";
 import About from "./components/about";
-import Experience from "./components/experience";
-import Project from "./components/project";
+import Experiences from "./components/experiences";
+import Projects from "./components/projects";
+import Contact from "./components/contact";
 
 const HomePage = () => {
     return (
         <>
-            <About/>
-            <Experience/>
-            <Project/>
-            {/* <Contact/>  */}
+            <About />
+            <Experiences />
+            <Projects />
+            <Contact/> 
         </>
     )
 }
