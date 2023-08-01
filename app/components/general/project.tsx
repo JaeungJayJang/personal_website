@@ -11,7 +11,7 @@ interface dataProps {
 const ProjectCard = ({ name, description, skills, link }: dataProps) => {
     return (
         <div className="relative flex flex-col justify-center items-start p-4 gap-3 bg-tertiary text-white">
-            <h1 className="text-xl font-bold uppercase">
+            <h1 className="text-2xl font-bold uppercase">
                 {name}
             </h1>
             <p className="">

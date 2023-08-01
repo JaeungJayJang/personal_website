@@ -74,7 +74,7 @@ const Projects = () => {
             <div className="flex flex-col justify-center h-full py-16 max-w-screen-lg text-white">
                 <div className="flex flex-col justify-center items-left gap-4">
                     <h2 className="text-4xl font-bold text-black">Side Projects</h2>
-                    <div className="flex flex-col gap-4">
+                    <div className="flex flex-col gap-4 drop-shadow-xl">
                         {data &&
                             data.map((job, i) => {
                                 return (
