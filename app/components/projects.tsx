@@ -2,6 +2,7 @@ import React from "react";
 
 import ProjectCard from "./general/project";
 import MainButton from "./general/button";
+import Container from "./general/container";
 
 interface dataProps {
     name: string;
@@ -70,33 +71,33 @@ const Projects = () => {
 
 
     return (
-        <div id="projects" className="flex flex-col justify-center items-center gap-4 p-4">
-            <div className="flex flex-col justify-center h-full py-16 max-w-screen-lg text-white">
-                <div className="flex flex-col justify-center items-left gap-4">
-                    <h2 className="text-4xl font-bold text-black">Side Projects</h2>
-                    <div className="flex flex-col gap-4 drop-shadow-xl">
-                        {data &&
-                            data.map((job, i) => {
-                                return (
-                                    <div className="flex flex-col gap-7">
+        // <div className="flex flex-col justify-center items-center gap-4 p-4">
+        //     <div className="flex flex-col justify-center h-full py-16 max-w-screen-lg text-white">
+        <Container>
+            <div id="projects" className="flex flex-col justify-center items-left gap-4">
+                <h2 className="text-4xl font-bold text-black">Side Projects</h2>
+                <div className="flex flex-col gap-4 drop-shadow-xl">
+                    {data &&
+                        data.map((job, i) => {
+                            return (
+                                <div key={`project_${i}`} className="flex flex-col gap-7">
 
-                                        <ProjectCard
-                                            name={job.name}
-                                            description={job.desciprion}
-                                            skills={job.skills}
-                                            link={job.link}
-                                        />
-                                    </div>
-                                )
-                            })
-                        }
-                    </div>
-                    <div className="flex flex-col items-center">
-                        <MainButton text="Show more" url="/" />
-                    </div>
+                                    <ProjectCard
+                                        name={job.name}
+                                        description={job.desciprion}
+                                        skills={job.skills}
+                                        link={job.link}
+                                    />
+                                </div>
+                            )
+                        })
+                    }
+                </div>
+                <div className="flex flex-col items-center">
+                    <MainButton text="Show more" url="/" />
                 </div>
             </div>
-        </div>
+        </Container>
 
         // <div id="projects" className="h-auto flex justify-center py-20">
         //     <div className="container h-full px-4 lg:px-64">

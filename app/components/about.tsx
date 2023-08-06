@@ -2,6 +2,7 @@ import React from "react";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 
 import Hero from "./general/hero";
+import Container from "./general/container";
 
 const GITHUB_LINK = "https://github.com/qmffkem";
 const LINKED_LINK = "https://www.linkedin.com/in/jaeung-jang/";
@@ -19,11 +20,11 @@ const BlueSphereBio = () => {
 const About = () => {
 
     return (
-        <div id="about" className="w-screen h-screen flex justify-center p-4">
-            <div className="flex flex-col justify-center h-full py-16 max-w-screen-lg">
-                <Hero/>
-            </div>
-        </div>
+        // <div className="w-screen h-screen flex justify-center p-4">
+        //     <div className="flex flex-col justify-center h-full py-16 max-w-screen-lg">
+        <Container height="h-screen">
+            <Hero/>
+        </Container>
         // <div id="about" className="w-screen h-screen flex justify-center py-20">
         // </div>
         // <div id="about" className="relative w-screen h-screen flex justify-center py-20">
