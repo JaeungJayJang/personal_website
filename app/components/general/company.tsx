@@ -21,9 +21,9 @@ const CompanyCard = ({ role, company_name, company_link, descriptions }: dataPro
             <ul className="flex flex-col list-disc pl-4 gap-3">
                 {
                     descriptions &&
-                    descriptions.map((description) => {
+                    descriptions.map((description, i) => {
                         return (
-                            <li className="">
+                            <li className="" key={`description_${i}`}>
                                 {description}
                             </li>
                         )

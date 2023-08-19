@@ -23,7 +23,7 @@ const Hero = () => {
                         Jaeung Jang
                     </h1>
                     <p className=" text-base">
-                        I'm a software engineer specialized in increasing efficiency and automating process.
+                        I&apos;m a software engineer specialized in increasing efficiency and automating process.
                         I am currently working on buidling high-performance workflow management tools at <BlueSphereBio />.
                     </p>
                     <MainButton text="Resume"/>

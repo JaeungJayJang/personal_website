@@ -1,8 +1,24 @@
 import React from "react";
+import fs from "fs";
+import path from "path";
+
+export async function getStaticProps() {
+    const directory = path.join(process.cwd(), "data")
+    const allProjects =  fs.readFileSync(directory + "/projects.json", "utf8");
+    
+    return {
+        props: {
+            allProjects
+        }
+    }
+}
+
 
 import ProjectCard from "./general/project";
 import MainButton from "./general/button";
 import Container from "./general/container";
+
+
 
 interface dataProps {
     name: string;
@@ -12,6 +28,7 @@ interface dataProps {
     image_link?: string;
 }
 
+const LIMIT: number = 3;
 const data: Array<dataProps> = [
     {
         "name": "project name",
@@ -79,64 +96,31 @@ const Projects = () => {
                 <div className="flex flex-col gap-4 drop-shadow-xl">
                     {data &&
                         data.map((job, i) => {
-                            return (
-                                <div key={`project_${i}`} className="flex flex-col gap-7">
+                            if (i < LIMIT) {
+                                return (
+                                    <div key={`project_${i}`} className="flex flex-col gap-7">
 
-                                    <ProjectCard
-                                        name={job.name}
-                                        description={job.desciprion}
-                                        skills={job.skills}
-                                        link={job.link}
-                                    />
-                                </div>
-                            )
+                                        <ProjectCard
+                                            name={job.name}
+                                            description={job.desciprion}
+                                            skills={job.skills}
+                                            link={job.link}
+                                        />
+                                    </div>
+                                )
+                            }
                         })
                     }
                 </div>
-                <div className="flex flex-col items-center">
-                    <MainButton text="Show more" url="/" />
-                </div>
+
+                {
+                    data && (data.length > LIMIT) &&
+                    <div className="flex flex-col items-center">
+                        <MainButton text="Show more" url="/" />
+                    </div>
+                }
             </div>
         </Container>
-
-        // <div id="projects" className="h-auto flex justify-center py-20">
-        //     <div className="container h-full px-4 lg:px-64">
-        //         <div className="flex flex-col h-full justify-center">
-        //             <div className="">
-        //                 <h2 className="text-4xl leading-normal font-bold">
-        //                     Side Projects
-        //                 </h2>
-        //             </div>
-        //             {
-        //                 data &&
-        //                 data.map((project, i) => {
-        //                     return (
-        //                         <div className="card md:card-side bg-base-100 shadow-xl mb-8">
-        //                             <figure className="md:w-2/6 md:h-[200px]">
-        //                                 <img src={project.image_link} alt="Album" />
-        //                             </figure>
-        //                             <div className="card-body">
-        //                                 <h2 className="card-title">{project.name}</h2>
-        //                                 <p>{project.desciprion}</p>
-        //                                 <div>
-        //                                     {
-        //                                         project.skills &&
-        //                                         project.skills.map((skill) => {
-        //                                             return (
-        //                                                 <span className="badge badge-neutral m-[2px] p-3">{skill}</span>
-        //                                             )
-        //                                         })
-        //                                     }
-        //                                 </div>
-        //                             </div>
-        //                         </div>
-        //                     )
-        //                 })
-        //             }
-        //         </div>
-        //     </div>
-        // </div>
-
     )
 }
 

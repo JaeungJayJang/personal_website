@@ -21,7 +21,7 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body className={`${inter.className}`} >
-				{/* <Header /> */}
+				<Header />
 				{/* <div className="relative w-full h-full">
           <div className="absolute overflow-x-hidden w-[400px] h-full bg-secondary top-[calc(100vh-60px)] left-[calc(50%+300px)] z-[-1]"/>
         </div> */}

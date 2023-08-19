@@ -20,9 +20,9 @@ const ProjectCard = ({ name, description, skills, link }: dataProps) => {
             <div className="flex gap-3 flex-wrap">
                 {
                     skills &&
-                    skills.map((skill) => {
+                    skills.map((skill, i) => {
                         return (
-                            <div className="bg-secondary rounded-full px-3 text-center text-black">{skill}</div>
+                            <div key={`skill_${i}`} className="bg-secondary rounded-full px-3 text-center text-black">{skill}</div>
                             // <span className="m-[2px] p-3">{skill}</span>
                         )
                     })
