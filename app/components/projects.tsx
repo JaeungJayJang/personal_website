@@ -20,14 +20,14 @@ interface dataProps {
 const LIMIT: number = 3;
 import fs from "fs";
 
-const getData = async (): Promise<Array<dataProps>> => {
+const getData = (): Array<dataProps> => {
     const file = fs.readFileSync("data/projects.json", { encoding: "ascii" })
     let fileObj = JSON.parse(file);
     return fileObj;
 }
 
-const Projects = async () => {
-    let data = await getData();
+const Projects = () => {
+    let data = getData();
     return (
         <Container>
             <div id="projects" className="flex flex-col justify-center items-left gap-4">
