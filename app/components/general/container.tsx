@@ -7,18 +7,17 @@ interface props {
 }
 
 const Container = ({children, height = "h-full", color}:props) => {
-    let opc_90 = `${color}/90`
     
     let bgColor = "bg-white"
     switch(color){
         case "primary":
-            bgColor = `bg-gradient-to-b from-primary to-primary/90`;
+            bgColor = `bg-gradient-to-br from-primary to-primary/80`;
             break;
         case "secondary":
-            bgColor = `bg-gradient-to-b from-secondary to-secondary/90`;
+            bgColor = `bg-gradient-to-br from-secondary to-secondary/80`;
             break;
         case "tertiary":
-            bgColor = `bg-gradient-to-b from-tertiary to-tertiary/90`;
+            bgColor = `bg-gradient-to-br from-tertiary to-tertiary/80`;
             break;
     }
 
