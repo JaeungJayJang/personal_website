@@ -4,15 +4,10 @@ import ProjectCard from "./general/project";
 import MainButton from "./general/button";
 import Container from "./general/container";
 
-
-interface skillProps {
-    name: string;
-}
-
 interface dataProps {
     name: string;
     description: string;
-    skills: Array<skillProps>;
+    skills: Array<string>;
     link: string;
     image_link?: string;
 }
@@ -42,7 +37,7 @@ const Projects = () => {
                                         <ProjectCard
                                             name={project.name}
                                             description={project.description}
-                                            skills={project.skills.map((skill) => skill.name)}
+                                            skills={project.skills}
                                             link={project.link}
                                         />
                                     </div>
