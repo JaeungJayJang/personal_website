@@ -56,34 +56,5 @@
         ],
         "link": "",
         "image_link": "https://www.veryicon.com/download/png/emoticon/number-1/20-5?s=256"
-    },
-    {
-        "name": "project name",
-        "description": "a brief description about what the project is",
-        "skills": [
-            {
-                "name": "Next.js"
-            },
-            {
-                "name": "FastAPI"
-            },
-            {
-                "name": "Nextflow"
-            },
-            {
-                "name": "React"
-            },
-            {
-                "name": "TypeScript"
-            },
-            {
-                "name": "JavaScript"
-            },
-            {
-                "name": "HPC"
-            }
-        ],
-        "link": "",
-        "image_link": "https://www.shutterstock.com/image-vector/blue-horizontal-lens-flares-pack-260nw-2202148279.jpg"
     }
 ]
