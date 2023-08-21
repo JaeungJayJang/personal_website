@@ -13,45 +13,17 @@ interface dataProps {
     skills: Array<string>;
 }
 
-const data: Array<dataProps> = [
-    {
-        "role": "Software Engineer",
-        "company_name": "BlueSphere Bio",
-        "company_link": "https://bluespherebio.com/",
-        "start_date": new Date(),
-        "end_date": undefined,
-        "descriptions": [
-            "Designed and implemented an end-to-end workflow monitoring and management application from scratch using Next.js and FastAPI frameworks, providing real-time progress tracking and user permission control for optimized workflow operations.",
-            "Orchestrated servers into HPC nodes using Slurm and established centralized user management system with LDAP to provide a tailored server architecture for the team's needs",
-            "Built an in-house web application using react CRA, and FastAPI with features including multiple sequence alignment and pairwise alignment for TCR sequence analysis, and PCA, T-SNE, and UMAP for multi-dimensional analysis to support scientists within the company",
-        ],
-        "skills": [
-            "Next.js",
-            "FastAPI",
-            "Nextflow",
-            "React",
-            "TypeScript",
-            "JavaScript",
-            "HPC",
-        ]
-    },
-    {
-        "role": "NONE",
-        "company_name": "",
-        "company_link": "https://bluespherebio.com/",
-        "start_date": new Date(),
-        "end_date": new Date(),
-        "descriptions": [
-            "description1",
-            "description2",
-            "description3",
-            "description4",
-        ],
-        "skills": []
-    }
-]
+import fs from "fs";
+
+const getData = (): Array<dataProps> => {
+    const file = fs.readFileSync("data/experiences.json", { encoding: "ascii" });
+    let fileObj = JSON.parse(file);
+    return fileObj;
+}
+
 
 const Experiences = () => {
+    const data = getData();
     return (
         // <div className="relative flex p-4 justify-center bg-primary z-0">
         //     <div className="flex flex-col justify-center h-full py-16 max-w-screen-lg text-white">
@@ -60,20 +32,22 @@ const Experiences = () => {
                 <h2 className="text-4xl font-bold">Companies I have worked with</h2>
                 <div className="flex flex-col gap-4 drop-shadow-xl">
                     {data &&
-                        data.map((job, i) => {
+                        data.map((experneice, i) => {
+                            const startDate = new Date(experneice.start_date)
+                            const endDate = experneice.end_date ? new Date(experneice.end_date).getFullYear() : "present".toUpperCase();
                             return (
                                 <div key={`experience_${i}`} className="flex flex-col py-4 gap-7">
                                     <p className="pl-4">
-                                        {job.start_date.getFullYear()} - {job.end_date ? job.end_date.getFullYear() : "present".toUpperCase()}
+                                        {startDate.getFullYear()} - {endDate}
                                     </p>
                                     <CompanyCard
-                                        role={job.role}
-                                        company_name={job.company_name}
-                                        company_link={job.company_link}
-                                        start_date={job.start_date}
-                                        end_date={job.end_date}
-                                        descriptions={job.descriptions}
-                                        skills={job.skills}
+                                        role={experneice.role}
+                                        company_name={experneice.company_name}
+                                        company_link={experneice.company_link}
+                                        start_date={experneice.start_date}
+                                        end_date={experneice.end_date}
+                                        descriptions={experneice.descriptions}
+                                        skills={experneice.skills}
                                     />
                                 </div>
                             )

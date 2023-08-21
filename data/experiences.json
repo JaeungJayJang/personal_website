@@ -1,0 +1,37 @@
+[
+    {
+        "role": "Software Engineer",
+        "company_name": "BlueSphere Bio",
+        "company_link": "https://bluespherebio.com/",
+        "start_date": "2012-04-23T18:25:43.511Z",
+        "end_date": null,
+        "descriptions": [
+            "Designed and implemented an end-to-end workflow monitoring and management application from scratch using Next.js and FastAPI frameworks, providing real-time progress tracking and user permission control for optimized workflow operations.",
+            "Orchestrated servers into HPC nodes using Slurm and established centralized user management system with LDAP to provide a tailored server architecture for the team's needs",
+            "Built an in-house web application using react CRA, and FastAPI with features including multiple sequence alignment and pairwise alignment for TCR sequence analysis, and PCA, T-SNE, and UMAP for multi-dimensional analysis to support scientists within the company"
+        ],
+        "skills": [
+            "Next.js",
+            "FastAPI",
+            "Nextflow",
+            "React",
+            "TypeScript",
+            "JavaScript",
+            "HPC"
+        ]
+    },
+    {
+        "role": "NONE",
+        "company_name": "",
+        "company_link": "https://bluespherebio.com/",
+        "start_date": "2012-04-23T18:25:43.511Z",
+        "end_date": "2012-04-23T18:25:43.511Z",
+        "descriptions": [
+            "description1",
+            "description2",
+            "description3",
+            "description4"
+        ],
+        "skills": []
+    }
+]
