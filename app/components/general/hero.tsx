@@ -11,7 +11,23 @@ const BlueSphereBio = () => {
     )
 }
 
+interface aboutProps {
+    name: string;
+    description: string;
+}
+
+import fs from "fs";
+
+const getData = (): aboutProps => {
+    const file = fs.readFileSync("data/about.json", { encoding: "ascii" })
+    let fileObj = JSON.parse(file);
+    return fileObj;
+}
+
+
 const Hero = () => {
+    const data = getData();
+
     return (
         <div id="hero" className="relative flex flex-col justify-center items-start px-4 md:px-12 py-12 gap-3 bg-primary leading-normal text-white">
             <div className="flex">
@@ -20,11 +36,10 @@ const Hero = () => {
                         Hello, my name is
                     </h2>
                     <h1 className="text-5xl font-bold text-secondary">
-                        Jaeung Jang
+                        {data.name}
                     </h1>
                     <p className=" text-base">
-                        I&apos;m a software engineer specialized in increasing efficiency and automating process.
-                        I am currently working on buidling high-performance workflow management tools at <BlueSphereBio />.
+                        {data.description}
                     </p>
                     <MainButton text="Resume"/>
                 </div>
