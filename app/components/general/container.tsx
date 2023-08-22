@@ -8,7 +8,7 @@ interface props {
 
 const Container = ({children, height = "h-full", color}:props) => {
     
-    let bgColor = "bg-white"
+    let bgColor = "bg-transparent"
     switch(color){
         case "primary":
             bgColor = `bg-gradient-to-br from-primary to-primary/80`;
