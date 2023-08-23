@@ -9,7 +9,7 @@ const Body = ({children}: props) => {
             <div className="relative">
                 {children}
             </div>
-            <div className="absolute w-[300px] h-full bg-secondary z-[-1] top-[calc(100vh-60px)] left-[calc(50%-150px+400px)]"></div>
+            <div className="absolute w-[300px] h-[calc(100%-(100vh-60px))] bg-secondary z-[-1] top-[calc(100vh-60px)] left-[calc(50%-150px+400px)]"></div>
         </div>
     )
 }
