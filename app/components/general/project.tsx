@@ -14,17 +14,26 @@ const ProjectCard = ({ name, description, skills, link }: dataProps) => {
             <h1 className="text-2xl font-bold uppercase">
                 {name}
             </h1>
-            <p className="md:flex-grow md:overflow-auto">
-                {description}
-            </p>
+            <div className="md:flex-grow w-full">
+                <p style={{
+                    display: "-webkit-box",
+                    WebkitBoxOrient: "vertical",
+                    WebkitLineClamp: 5,
+                    overflow: "hidden",
+                    textOverflow: "ellipsis"
+                }}>
+                    {description}
+                </p>
+            </div>
             <div className="flex gap-3 flex-wrap md:overflow-auto">
                 {
                     skills &&
                     skills.map((skill, i) => {
-                        return (
-                            <div key={`skill_${i}`} className="bg-secondary rounded-full px-3 text-center text-black">{skill}</div>
-                            // <span className="m-[2px] p-3">{skill}</span>
-                        )
+                        if (i < 3) {
+                            return (
+                                <div key={`skill_${i}`} className="bg-secondary rounded-full px-3 text-center text-black">{skill}</div>
+                            )
+                        }
                     })
                 }
             </div>
