@@ -17,11 +17,11 @@ import fs from "fs";
 
 const getData = (): Array<dataProps> => {
     const file = fs.readFileSync("data/projects.json", { encoding: "ascii" })
-    try{
+    try {
         let fileObj = JSON.parse(file);
         return fileObj;
     }
-    catch{
+    catch {
         return [];
     }
 }
@@ -29,8 +29,8 @@ const getData = (): Array<dataProps> => {
 const Projects = () => {
     let data = getData();
     return (
-        <Container>
-            <div id="projects" className="flex flex-col justify-center items-left gap-4">
+        <Container id="projects" >
+            <div className="flex flex-col justify-center items-left gap-4">
                 <h2 className="text-4xl font-bold text-black">
                     Side Projects
                 </h2>

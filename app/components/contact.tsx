@@ -9,10 +9,8 @@ const LINKED_LINK = "https://www.linkedin.com/in/jaeung-jang/";
 
 const Contact = () => {
     return (
-        // <div className="flex flex-col justify-center bg-primary items-center gap-4 p-4">
-        //     <div className="flex flex-col justify-center h-full py-16 max-w-screen-lg text-white">
-        <Container color="primary">
-            <div id="contact" className="flex flex-col justify-center items-center text-center gap-4">
+        <Container id="contact" color="primary">
+            <div className="flex flex-col justify-center items-center text-center gap-4">
                 <h2 className="text-4xl font-bold uppercase">
                     Let&apos;s Connect!
                 </h2>

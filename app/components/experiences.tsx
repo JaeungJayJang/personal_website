@@ -27,8 +27,8 @@ const Experiences = () => {
     return (
         // <div className="relative flex p-4 justify-center bg-primary z-0">
         //     <div className="flex flex-col justify-center h-full py-16 max-w-screen-lg text-white">
-        <Container color="primary">
-            <div id="experiences" className="flex flex-col justify-center items-left gap-4">
+        <Container id="experiences" color="primary">
+            <div className="flex flex-col justify-center items-left gap-4">
                 <h2 className="text-4xl font-bold">Companies I have worked with</h2>
                 <div className="flex flex-col gap-4 drop-shadow-xl">
                     {data &&
