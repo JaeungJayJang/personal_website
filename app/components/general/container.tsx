@@ -11,13 +11,13 @@ const Container = ({children, height = "h-full", color}:props) => {
     let bgColor = "bg-transparent"
     switch(color){
         case "primary":
-            bgColor = `bg-gradient-to-br from-primary to-primary/80`;
+            bgColor = `bg-gradient-to-br from-primary to-primary-90`;
             break;
         case "secondary":
-            bgColor = `bg-gradient-to-br from-secondary to-secondary/80`;
+            bgColor = `bg-gradient-to-br from-secondary to-secondary-90`;
             break;
         case "tertiary":
-            bgColor = `bg-gradient-to-br from-tertiary to-tertiary/80`;
+            bgColor = `bg-gradient-to-br from-tertiary to-tertiary-90`;
             break;
     }
 
