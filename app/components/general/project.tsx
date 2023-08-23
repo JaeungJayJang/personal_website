@@ -10,14 +10,14 @@ interface dataProps {
 
 const ProjectCard = ({ name, description, skills, link }: dataProps) => {
     return (
-        <div className="relative flex flex-col justify-center items-start p-4 gap-3 bg-tertiary text-white">
+        <div className="relative flex flex-col justify-center items-start p-4 gap-3 bg-tertiary text-white md:justify-start md:h-full">
             <h1 className="text-2xl font-bold uppercase">
                 {name}
             </h1>
-            <p className="">
+            <p className="md:flex-grow md:overflow-auto">
                 {description}
             </p>
-            <div className="flex gap-3 flex-wrap">
+            <div className="flex gap-3 flex-wrap md:overflow-auto">
                 {
                     skills &&
                     skills.map((skill, i) => {

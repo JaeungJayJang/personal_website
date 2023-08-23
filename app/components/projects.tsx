@@ -17,8 +17,13 @@ import fs from "fs";
 
 const getData = (): Array<dataProps> => {
     const file = fs.readFileSync("data/projects.json", { encoding: "ascii" })
-    let fileObj = JSON.parse(file);
-    return fileObj;
+    try{
+        let fileObj = JSON.parse(file);
+        return fileObj;
+    }
+    catch{
+        return [];
+    }
 }
 
 const Projects = () => {
@@ -26,13 +31,15 @@ const Projects = () => {
     return (
         <Container>
             <div id="projects" className="flex flex-col justify-center items-left gap-4">
-                <h2 className="text-4xl font-bold text-black">Side Projects</h2>
-                <div className="flex flex-col gap-4 drop-shadow-xl">
-                    {data &&
+                <h2 className="text-4xl font-bold text-black">
+                    Side Projects
+                </h2>
+                <div className="flex flex-col gap-4 drop-shadow-xl md:flex-row">
+                    {data && data.length > 0 ?
                         data.map((project, i) => {
                             if (i < LIMIT) {
                                 return (
-                                    <div key={`project_${i}`} className="flex flex-col gap-7">
+                                    <div key={`project_${i}`} className="flex flex-col gap-7 flex-grow md:w-[33%] md:aspect-square">
 
                                         <ProjectCard
                                             name={project.name}
@@ -44,6 +51,10 @@ const Projects = () => {
                                 )
                             }
                         })
+                        :
+                        <div className="text-black">
+                            More to come..
+                        </div>
                     }
                 </div>
 
