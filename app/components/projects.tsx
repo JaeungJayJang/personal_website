@@ -34,12 +34,12 @@ const Projects = () => {
                 <h2 className="text-4xl font-bold text-black">
                     Side Projects
                 </h2>
-                <div className="flex flex-col gap-4 drop-shadow-xl md:flex-row">
+                <div className="flex flex-col gap-4 drop-shadow-xl lg:flex-row">
                     {data && data.length > 0 ?
                         data.map((project, i) => {
                             if (i < LIMIT) {
                                 return (
-                                    <div key={`project_${i}`} className="flex flex-col gap-7 flex-grow md:w-[33%] md:aspect-square">
+                                    <div key={`project_${i}`} className="flex flex-col gap-7 lg:w-[33%] lg:aspect-square">
 
                                         <ProjectCard
                                             name={project.name}
