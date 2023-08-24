@@ -1,19 +1,25 @@
 import React from "react";
+import Link from "next/link";
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 interface dataProps {
     name: string;
     description: string;
     skills: Array<string>;
-    link: string;
+    link?: string;
 }
 
-
-const ProjectCard = ({ name, description, skills, link }: dataProps) => {
+const ProjectCardInner = ({ name, description, skills, link }: dataProps) => {
     return (
-        <div className="relative flex flex-col justify-center items-start p-4 gap-3 bg-tertiary text-white md:justify-start md:h-full">
-            <h1 className="text-2xl font-bold uppercase">
-                {name}
-            </h1>
+        <>
+            <div className={`flex justify-start w-full items-center gap-2 ${link && "group-hover:text-secondary"}`}>
+                <h1 className="text-2xl font-bold uppercase">
+                    {name}
+                </h1>
+                {link &&
+                    <FaExternalLinkAlt />
+                }
+            </div>
             <div className="md:flex-grow w-full">
                 <p style={{
                     display: "-webkit-box",
@@ -37,9 +43,34 @@ const ProjectCard = ({ name, description, skills, link }: dataProps) => {
                     })
                 }
             </div>
-
-        </div>
+        </>
     )
+}
+
+const ProjectCard = ({ name, description, skills, link }: dataProps) => {
+    if (link) {
+        return (
+            <Link href={`${link ? link : ""}`} className="group relative flex flex-col justify-center items-start p-4 gap-3 bg-tertiary text-white md:justify-start md:h-full">
+                <ProjectCardInner
+                    name={name}
+                    description={description}
+                    skills={skills}
+                    link={link}
+                />
+            </Link>
+        )
+    }
+    else {
+        return (
+            <div className="group relative flex flex-col justify-center items-start p-4 gap-3 bg-tertiary text-white md:justify-start md:h-full">
+                <ProjectCardInner
+                    name={name}
+                    description={description}
+                    skills={skills}
+                />
+            </div>
+        )
+    }
 }
 
 export default ProjectCard;
