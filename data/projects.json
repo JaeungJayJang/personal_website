@@ -1,47 +1,13 @@
 [
     {
-        "name": "project name",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "name": "jang.jaeung.com",
+        "description": "Personal website built with Next.js and Tailwind CSS",
         "skills": [
             "Next.js",
-            "FastAPI",
-            "Nextflow",
-            "React",
-            "TypeScript",
-            "JavaScript",
-            "HPC"
+            "Tailwind CSS",
+            "DaisyUI"
         ],
-        "link": "",
-        "image_link": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Image_created_with_a_mobile_phone.png"
-    },
-    {
-        "name": "project name",
-        "description": "a brief description about what the project is",
-        "skills": [
-            "Next.js",
-            "FastAPI",
-            "Nextflow",
-            "React",
-            "TypeScript",
-            "JavaScript",
-            "HPC"
-        ],
-        "link": "",
-        "image_link": "https://www.veryicon.com/download/png/emoticon/number-1/20-5?s=256"
-    },
-    {
-        "name": "project name",
-        "description": "a brief description about what the project is",
-        "skills": [
-            "Next.js",
-            "FastAPI",
-            "Nextflow",
-            "React",
-            "TypeScript",
-            "JavaScript",
-            "HPC"
-        ],
-        "link": "",
-        "image_link": "https://www.shutterstock.com/image-vector/blue-horizontal-lens-flares-pack-260nw-2202148279.jpg"
+        "link": "https://github.com/qmffkem/personal_website",
+        "image_link": null
     }
 ]
