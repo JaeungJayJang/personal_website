@@ -32,13 +32,15 @@ const Header = () => {
             <div className="sticky w-screen top-0 bg-white md:bg-opacity-25 shadow-sm backdrop-blur-sm h-16 flex justify-center border-b ">
                 <div className="container flex justify-between items-center px-4 md:px-8">
                     <div className="text-xl text-secondary font-bold md:text-3xl">
-                        Jaeung.J
+                        <a href="/#">
+                            Jaeung.J
+                        </a>
                     </div>
                     <div className="hidden md:flex justify-around w-[400px]">
-                        <CustomNav href="#about" text={"about".toUpperCase()} />
-                        <CustomNav href="#experiences" text={"experiences".toUpperCase()} />
-                        <CustomNav href="#projects" text={"projects".toUpperCase()} />
-                        <CustomNav href="#contact" text={"contact".toUpperCase()} />
+                        <CustomNav href="/#about" text={"about".toUpperCase()} />
+                        <CustomNav href="/#experiences" text={"experiences".toUpperCase()} />
+                        <CustomNav href="/#projects" text={"projects".toUpperCase()} />
+                        <CustomNav href="/#contact" text={"contact".toUpperCase()} />
                     </div>
                     <div className="md:hidden" onClick={() => setMobileNavCheck(prevState => !prevState)}>
                         <GiHamburgerMenu />
@@ -48,10 +50,10 @@ const Header = () => {
             {
                 mobileNavCheck &&
                 <div className="md:hidden flex flex-col sticky w-screen top-16 bg-white border-b" onClick={() => setMobileNavCheck(prevState => !prevState)}>
-                    <CustomNav href="#about" text={"about".toUpperCase()}/>
-                    <CustomNav href="#experiences" text={"experiences".toUpperCase()} />
-                    <CustomNav href="#projects" text={"projects".toUpperCase()} />
-                    <CustomNav href="#contact" text={"contact".toUpperCase()} />
+                    <CustomNav href="/#about" text={"about".toUpperCase()}/>
+                    <CustomNav href="/#experiences" text={"experiences".toUpperCase()} />
+                    <CustomNav href="/#projects" text={"projects".toUpperCase()} />
+                    <CustomNav href="/#contact" text={"contact".toUpperCase()} />
                 </div>
             }
         </div>
