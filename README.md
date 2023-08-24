@@ -1,7 +1,9 @@
 ## jang.jaeung.com
 This is a personal website that is built with mostly Next.js and Tailwind CSS.
 
-<img style="border: 2px solid grey ;border-radius: 1rem;" src="src/demo.png">
+<kbd>
+  <img style="border: 2px solid grey ;border-radius: 1rem;" src="src/demo.png">
+</kbd>
 
 ## Tools
 * [Next.js](https://nextjs.org/)
