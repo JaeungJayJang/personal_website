@@ -24,5 +24,5 @@ To start this project, I researched on other people's website for references, es
 
 
 ## Things to do
-[] Update Page title
-[] Update Favicon
+ - [ ] Update Page title
+ - [ ] Update Favicon
