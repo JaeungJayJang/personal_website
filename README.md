@@ -21,3 +21,8 @@ This is a personal website that is built with mostly Next.js and Tailwind CSS.
 
 ## Credit
 To start this project, I researched on other people's website for references, especially people with similar background as me, software engineer. There were tons of good references out there and all of them were amazing, but one I liked and inspired a lot is [Brittany Chiang's website](https://brittanychiang.com/). The message is clear and concise, and I love her simplistic design as well. huge thanks for great inspiration, Thank you.
+
+
+## Things to do
+[] Update Page title
+[] Update Favicon
