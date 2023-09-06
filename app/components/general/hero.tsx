@@ -3,15 +3,6 @@ import React from "react";
 import MainButton from "./button";
 import Image from "next/image";
 
-const BlueSphereBio = () => {
-
-    return (
-        <a className="inline-block text-red-400" href="https://bluespherebio.com/" target="_black">
-            BlueSphere Bio
-        </a>
-    )
-}
-
 interface aboutProps {
     name: string;
     description: string;
@@ -30,12 +21,14 @@ const getPortrait = () => {
     return file
 }
 
+const LINKEDIN_LINK = "https://www.linkedin.com/in/jaeung-jang/"
+
 const Hero = () => {
     const data = getData();
     const portraitImage = getPortrait();
 
     return (
-        <div id="hero" className="relative flex flex-col justify-center items-start px-4 md:px-12 py-12 gap-3 bg-primary leading-normal text-white">
+        <div id="hero" className="relative flex flex-col justify-center items-start px-4 md:px-12 py-12 gap-3 bg-primary-90 leading-normal text-white">
             <div className="flex">
                 <div className="flex flex-col items-start gap-3 sm:w-3/6 md:w-4/6">
                     <h2 className="text-base">
@@ -47,7 +40,7 @@ const Hero = () => {
                     <p className=" text-base">
                         {data.description}
                     </p>
-                    <MainButton text="Resume" />
+                    <MainButton text="LinkedIn" url={LINKEDIN_LINK} upper={false} />
                 </div>
                 <div className="absolute bottom-0 right-0 hidden sm:block sm:w-3/6 md:w-2/6 h-[calc(100%+32px)] pl-4 pr-8 pb-8">
                     <div className="relative bg-secondary w-full h-full overflow-hidden">
