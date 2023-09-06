@@ -1,5 +1,14 @@
 [
     {
+        "role": "Software Engineer at BioNTech US",
+        "company_name": "BioNTech SE",
+        "company_link": "https://www.biontech.com/int/en/home.html",
+        "start_date": "2023-06-12T04:00:00.00Z",
+        "end_date": null,
+        "descriptions": [],
+        "skills": []
+    },
+    {
         "role": "Software Engineer",
         "company_name": "BlueSphere Bio",
         "company_link": "https://bluespherebio.com/",
