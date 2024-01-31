@@ -1,5 +1,15 @@
 [
     {
+        "name": "Custom keyboard",
+        "description": "Custom firmware using QMK for my first split keyboard!",
+        "skills": [
+            "Pro Micro",
+            "QMK"
+        ],
+        "link": "https://github.com/qmffkem/qmk_firmware/tree/master/keyboards/sofle/keymaps/qmffkem",
+        "image_link": null
+    },
+    {
         "name": "Catch a Cat",
         "description": "Game to catch as much as coin without getting caught by dog, built with powerful Flutter and Flame engine.",
         "skills": [
