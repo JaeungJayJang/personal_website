@@ -10,6 +10,16 @@
         "image_link": null
     },
     {
+        "name": "esp32_tyranitar",
+        "description": "3D pokemon, Tyranitar, powered with ESP32 and micropython",
+        "skills": [
+            "ESP32",
+            "micropython",
+        ],
+        "link": "https://github.com/qmffkem/esp32_tyranitar",
+        "image_link": null
+    },
+    {
         "name": "Catch a Cat",
         "description": "Game to catch as much as coin without getting caught by dog, built with powerful Flutter and Flame engine.",
         "skills": [
