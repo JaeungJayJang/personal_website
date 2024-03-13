@@ -14,7 +14,7 @@
         "description": "3D pokemon, Tyranitar, powered with ESP32 and micropython",
         "skills": [
             "ESP32",
-            "micropython",
+            "micropython"
         ],
         "link": "https://github.com/qmffkem/esp32_tyranitar",
         "image_link": null
