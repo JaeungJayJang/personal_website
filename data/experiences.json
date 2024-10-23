@@ -5,8 +5,19 @@
         "company_link": "https://www.biontech.com/int/en/home.html",
         "start_date": "2023-06-12T04:00:00.00Z",
         "end_date": null,
-        "descriptions": [],
-        "skills": []
+        "descriptions": [
+            "Utilize Nextflow to automate workflows, enhancing efficiency and user experience for team members, particularly scientists",
+            "Maintain repositories by enforcing CI/CD, version control, and documentation standards to ensure consistent collaboration",
+            "Harmonization: Align and integrate datasets for improved accessibility and analysis across the team",
+            "Collaborate with cross-site teams to design and implement a scalable internal database, supporting broader organizational goals"
+        ],
+        "skills": [
+            "Python",
+            "Nextflow",
+            "Docker",
+            "AWS",
+            "Git"
+        ]
     },
     {
         "role": "Software Engineer",
