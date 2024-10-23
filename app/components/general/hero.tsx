@@ -17,7 +17,7 @@ const getData = (): aboutProps => {
 }
 
 const getPortrait = () => {
-    const file = fs.readFileSync("public/portrait.jpeg", { encoding: "base64" })
+    const file = fs.readFileSync("public/portrait.png", { encoding: "base64" })
     return file
 }
 
