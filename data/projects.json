@@ -1,5 +1,17 @@
 [
     {
+        "name": "Personal Blog",
+        "description": "A personal blog where I share my tech journey and insights, built with Next.js, MongoDB, FastAPI, and BlockNote",
+        "skills": [
+            "Next.js",
+            "FastAPI",
+            "MongoDB",
+            "BlockNote"
+        ],
+        "link": "https://github.com/qmffkem/qmk_firmware/tree/master/keyboards/sofle/keymaps/qmffkem",
+        "image_link": null
+    },
+    {
         "name": "Custom keyboard",
         "description": "Custom firmware using QMK for my first split keyboard!",
         "skills": [
