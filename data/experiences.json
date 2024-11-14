@@ -6,10 +6,9 @@
         "start_date": "2023-06-12T04:00:00.00Z",
         "end_date": null,
         "descriptions": [
-            "Utilize Nextflow to automate workflows, enhancing efficiency and user experience for team members, particularly scientists",
-            "Maintain repositories by enforcing CI/CD, version control, and documentation standards to ensure consistent collaboration",
-            "Align and integrate datasets for improved accessibility and analysis across the team",
-            "Collaborate with cross-site teams to design and implement a scalable internal database, supporting broader organizational goals"
+            "Engineer scalable cloud-based bioinformatics workflows using Nextflow, cutting analysis runtime from overnights to hours and automating processes to accelerate research timelines.",
+            "Collaborate with cross-site teams to design and implement components of a centralized internal database, supporting organizational goals and data accessibility.",
+            "Suport CI/CD pipeline best practices, version control, and documentation standards to ensure reproducible workflows and seamless team collaboration."
         ],
         "skills": [
             "Python",
@@ -26,9 +25,10 @@
         "start_date": "2021-02-16T05:00:00.00Z",
         "end_date": "2023-06-02T04:00:00.00Z",
         "descriptions": [
-            "Designed and implemented an end-to-end workflow monitoring and management application from scratch using Next.js and FastAPI frameworks, providing real-time progress tracking and user permission control for optimized workflow operations.",
-            "Orchestrated servers into HPC nodes using Slurm and established centralized user management system with LDAP to provide a tailored server architecture for the team's needs",
-            "Built an in-house web application using react CRA, and FastAPI with features including multiple sequence alignment and pairwise alignment for TCR sequence analysis, and PCA, T-SNE, and UMAP for multi-dimensional analysis to support scientists within the company"
+            "Developed Nextflow-driven workflow management platform using Next.js and FastAPI, delivering real-time progress monitoring, user-specific permissions, and intermediate result access for enhanced operational transparency.",
+            "Co-authored two patent filings, contributing to proprietary datasets and designing a scalable data management platform that boosted research throughput.",
+            "Transformed hybrid server architecture by integrating Slurm HPC clusters and centralized user authentication via LDAP, resulting in optimized computational resource allocation.",
+            "Achieved a 40% reduction in expected AWS costs by optimizing S3 and Storage Gateway usage, maintaining high system availability without compromising performance. "
         ],
         "skills": [
             "Next.js",
