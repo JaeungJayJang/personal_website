@@ -3,7 +3,6 @@ import './globals.css'
 import { Inter } from 'next/font/google'
 
 import Header from './components/layout/header'
-import Body from './components/layout/body'
 import Footer from './components/layout/footer'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -22,12 +21,12 @@ export default function RootLayout({
 		<html lang="en">
 			<body className={`${inter.className}`} >
 				<Header />
-				{/* <div className="relative w-full h-full">
-          <div className="absolute overflow-x-hidden w-[400px] h-full bg-secondary top-[calc(100vh-60px)] left-[calc(50%+300px)] z-[-1]"/>
-        </div> */}
-				<Body>
-					{children}
-				</Body>
+				<div className="flex flex-col overflow-hidden">
+					<div className="">
+						{children}
+					</div>
+					<div className="absolute w-[300px] h-[calc(100%-(100vh-60px))] bg-secondary z-[-1] top-[calc(100vh-60px)] left-[calc(50%-150px+400px)]"></div>
+				</div>
 				{/* <Footer /> */}
 			</body>
 		</html>
