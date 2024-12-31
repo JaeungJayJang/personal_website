@@ -44,7 +44,8 @@ module.exports = {
 					30: "#c0c1c6",
 					20: "#d5d6d9",
 					10: "#eaeaec",
-				}
+				},
+				"background": "#202020"
 			},
 			listStyleType: {
 				line: "'--'",
