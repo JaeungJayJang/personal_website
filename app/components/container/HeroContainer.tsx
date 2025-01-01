@@ -29,7 +29,7 @@ const HeroContainer = () => {
                     />
                 </div>
             </div>
-            <div className={`absolute bottom-10 left-1/2 transform -translate-x-1/2 transition-opacity duration-300 ${showIcon ? 'opacity-100' : 'opacity-0'}`}>
+            <div className={`fixed bottom-10 left-1/2 transform -translate-x-1/2 transition-opacity duration-300 ${showIcon ? 'opacity-100' : 'opacity-0'}`}>
                 <PiMouseScrollLight className="animate-bounce text-5xl " />
             </div>
         </div>
