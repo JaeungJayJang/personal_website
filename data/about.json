@@ -1,4 +1,10 @@
 {
     "name": "Jaeung Jang",
-    "description": "I'm a software engineer with a love for problem-solving, working on diverse projects encompassing web development, backend solutions, and workflow optimization. Let's dive into the latest trends in software engineering!"
+    "firstName": "Jaeung",
+    "lastName": "Jang",
+    "alternativeName": "Jay",
+    "description": [
+        "I am a software engineer with a passion for problem-solving and turning ideas into functional, elegant solutions. This site is my way of sharing a bit about myself, my experiences, and the projects I've worked on over the years. It's a place to document my journey and explore the intersection of creativity and technology.",
+        "Feel free to browse through my experiences and projects. Whether you're here out of curiosity or seeking inspiration, I hope you find something that resonates or sparks an idea. If nothing else, it's a snapshot of what I enjoy building and learning."
+    ]
 }
