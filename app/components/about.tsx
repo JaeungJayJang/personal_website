@@ -48,7 +48,7 @@ const About = () => {
                                 })
                             }
 
-                            <div className="flex gap-4 pt-12">
+                            <div className="flex gap-4 pt-8">
                                 <a href={GITHUB_LINK} target="_blank" rel="noreferrer">
                                     <FaGithub className="text-2xl opacity-60 hover:opacity-100" />
                                 </a>
