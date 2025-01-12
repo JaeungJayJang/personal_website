@@ -10,6 +10,7 @@
             "Collaborate with cross-site teams to design and implement components of a centralized internal database, supporting organizational goals and data accessibility.",
             "Suport CI/CD pipeline best practices, version control, and documentation standards to ensure reproducible workflows and seamless team collaboration."
         ],
+        "description_long": "I engineer scalable, cloud-based bioinformatics workflows using Nextflow, cutting analysis runtime from overnight to hours and automating processes to accelerate research timelines. Additionally, I collaborate with cross-site teams to design and implement components of a centralized internal database, facilitating data accessibility and aligning with broader organizational goals. To ensure reproducible workflows and seamless collaboration, I also support CI/CD pipeline best practices, version control, and rigorous documentation standards.",
         "skills": [
             "Python",
             "Nextflow",
@@ -30,6 +31,7 @@
             "Transformed hybrid server architecture by integrating Slurm HPC clusters and centralized user authentication via LDAP, resulting in optimized computational resource allocation.",
             "Achieved a 40% reduction in expected AWS costs by optimizing S3 and Storage Gateway usage, maintaining high system availability without compromising performance. "
         ],
+        "description_long": "I developed a Nextflow-driven workflow management platform using Next.js and FastAPI, providing real-time progress monitoring, user-specific permissions, and intermediate result access for enhanced transparency. I also co-authored two patent filings, contributing to proprietary datasets and designing a scalable data management platform that significantly boosted research throughput. To optimize computational resources, I transformed the hybrid server architecture by integrating Slurm HPC clusters with centralized user authentication via LDAP. Additionally, I achieved a 40% reduction in projected AWS costs by optimizing S3 and Storage Gateway usage-maintaining high system availability without compromising performance.",
         "skills": [
             "Next.js",
             "FastAPI",
