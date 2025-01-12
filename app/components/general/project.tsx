@@ -12,8 +12,8 @@ interface dataProps {
 const ProjectCardInner = ({ name, description, skills, link }: dataProps) => {
     return (
         <>
-            <div className={`flex justify-start w-full items-center gap-2 ${link && "group-hover:text-secondary"}`}>
-                <h1 className="text-2xl font-bold uppercase">
+            <div className={`flex justify-start w-full items-center gap-2 ${link && "group-hover:text-secondary"} transition-all`}>
+                <h1 className="text-xl font-semibold uppercase">
                     {name}
                 </h1>
                 {link &&
@@ -37,7 +37,8 @@ const ProjectCardInner = ({ name, description, skills, link }: dataProps) => {
                     skills.map((skill, i) => {
                         if (i < 3) {
                             return (
-                                <div key={`skill_${i}`} className="bg-secondary rounded-full px-3 text-center text-black">{skill}</div>
+                                // <div key={`skill_${i}`} className="bg-secondary rounded-full px-3 text-center bg-opacity-70">{skill}</div>
+                                <div key={`skill_${i}`} className="text-secondary">{skill}</div>
                             )
                         }
                     })
@@ -50,7 +51,7 @@ const ProjectCardInner = ({ name, description, skills, link }: dataProps) => {
 const ProjectCard = ({ name, description, skills, link }: dataProps) => {
     if (link) {
         return (
-            <Link href={`${link ? link : ""}`} className="group relative flex flex-col justify-center items-start p-4 gap-3 bg-tertiary text-white md:justify-start md:h-full">
+            <Link href={`${link ? link : ""}`} className="transition-all group relative flex flex-col justify-center items-start p-4 gap-3 hover:bg-white hover:bg-opacity-5 text-white md:justify-start md:h-full rounded-md border-[1px] border-slate-200">
                 <ProjectCardInner
                     name={name}
                     description={description}
