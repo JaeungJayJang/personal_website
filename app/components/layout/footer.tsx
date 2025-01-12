@@ -1,4 +1,3 @@
-import Container from "../general/container";
 
 const Footer = () => {
     return (

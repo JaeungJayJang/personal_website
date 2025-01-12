@@ -1,7 +1,6 @@
 import React from "react";
 
 import CompanyCard from "./general/company";
-import Container from "./general/container"
 
 interface dataProps {
     role: string;
