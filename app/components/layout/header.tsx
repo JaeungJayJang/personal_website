@@ -10,7 +10,7 @@ interface CustomNavProps {
 
 const CustomNav = ({ href, text }: CustomNavProps) => {
     return (
-        <a role="button" className="btn btn-link no-underline text-black hover:text-secondary hover:no-underline hover:text-lg hover: opacity-" href={href}>
+        <a role="button" className="transition-all btn btn-link no-underline text-black hover:text-secondary hover:no-underline hover: opacity-" href={href}>
             <p className="text-md font-bold">{text}</p>
         </a>
     )
@@ -29,7 +29,7 @@ const Header = () => {
 
     return (
         <div className="fixed z-50">
-            <div className="sticky w-screen top-0 bg-white md:bg-opacity-25 shadow-sm backdrop-blur-sm h-16 flex justify-center border-b ">
+            <div className="sticky w-screen top-0 bg-white h-16 flex justify-center border-b ">
                 <div className="container flex justify-between items-center px-4 md:px-8">
                     <div className="text-xl text-secondary font-bold md:text-3xl">
                         <a href="/#">
