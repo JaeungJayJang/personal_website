@@ -26,9 +26,7 @@ const getData = (): Array<dataProps> => {
 const Experiences = () => {
     const data = getData();
     return (
-        // <div className="relative flex p-4 justify-center bg-primary z-0">
-        //     <div className="flex flex-col justify-center h-full py-16 max-w-screen-lg text-white">
-        <div id="about" className="h-full bg-background">
+        <div id="experiences" className="h-full bg-background">
             <div className="flex flex-col justify-center items-center gap-4 p-4 bg-background">
                 <div className="flex flex-row justify-center h-full pb-20 max-w-screen-xl text-white w-full">
                     <div className="w-full flex flex-col gap-4">
