@@ -24,7 +24,7 @@ export default function RootLayout({
 				{children}
 				{/* <div className="flex flex-col overflow-hidden">
 				</div> */}
-				{/* <Footer /> */}
+				<Footer />
 			</body>
 		</html>
 	)
