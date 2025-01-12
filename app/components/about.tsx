@@ -30,25 +30,25 @@ const About = () => {
         <div id="about" className="md:h-screen bg-background">
             <div className="flex flex-col justify-center items-center gap-4 p-4 h-full bg-background">
                 <div className="flex flex-row justify-center h-full py-20 max-w-screen-xl text-white w-full">
-                    <div id="left" className="md:w-1/2">
-                    </div>
+                    {/* <div id="left" className="md:w-1/2">
+                    </div> */}
                     <div id="right" className="md:w-1/2 flex flex-col justify-center items-center">
 
                         <div className="w-full flex flex-col gap-4">
-                            <h1 className="text-5xl font-semibold">
+                            <h1 className="text-5xl font-semibold text-center">
                                 {`Hello, I'm ${data.name}`}
                             </h1>
                             {
                                 data.description.map((desc: string, index: number) => {
                                     return (
-                                        <p key={index} className="text">
+                                        <p key={index} className="text text-center">
                                             {desc}
                                         </p>
                                     )
                                 })
                             }
 
-                            <div className="flex gap-4 pt-8">
+                            <div className="flex gap-4 pt-8 transition-color justify-center">
                                 <a href={GITHUB_LINK} target="_blank" rel="noreferrer">
                                     <FaGithub className="text-2xl opacity-60 hover:opacity-100" />
                                 </a>
