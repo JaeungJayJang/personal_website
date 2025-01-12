@@ -27,12 +27,12 @@ const About = () => {
         // <Container id="about" height="h-screen">
         //     <Hero/>
         // </Container>
-        <div id="about" className="h-screen bg-background">
+        <div id="about" className="md:h-screen bg-background">
             <div className="flex flex-col justify-center items-center gap-4 p-4 h-full bg-background">
                 <div className="flex flex-row justify-center h-full py-20 max-w-screen-xl text-white w-full">
-                    <div id="left" className="w-1/2">
+                    <div id="left" className="md:w-1/2">
                     </div>
-                    <div id="right" className="w-1/2 flex flex-col justify-center items-center gap-4">
+                    <div id="right" className="md:w-1/2 flex flex-col justify-center items-center">
 
                         <div className="w-full flex flex-col gap-4">
                             <h1 className="text-5xl font-semibold">
