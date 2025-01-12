@@ -1,11 +1,8 @@
 import React from "react";
 import About from "./components/about";
-import AboutT from "./components/about_GMG_style";
 import Experiences from "./components/experiences";
 import Projects from "./components/projects";
-import Contact from "./components/contact";
 import HeroContainer from "@/app/components/container/HeroContainer";
-import Spline from '@splinetool/react-spline';
 
 const HomePage = () => {
     return (

@@ -24,9 +24,6 @@ const getData = (): dataProps => {
 const About = () => {
     const data = getData();
     return (
-        // <Container id="about" height="h-screen">
-        //     <Hero/>
-        // </Container>
         <div id="about" className="md:h-screen bg-background">
             <div className="flex flex-col justify-center items-center gap-4 p-4 h-full bg-background">
                 <div className="flex flex-row justify-center h-full py-20 max-w-screen-xl text-white w-full">
