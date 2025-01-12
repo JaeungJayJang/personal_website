@@ -35,15 +35,15 @@ const About = () => {
                     <div id="right" className="w-1/2 flex flex-col justify-center items-center gap-4">
 
                         <div className="w-full flex flex-col gap-4">
-                            <div className="text-5xl font-semibold">
+                            <h1 className="text-5xl font-semibold">
                                 {`Hello, I'm ${data.name}`}
-                            </div>
+                            </h1>
                             {
                                 data.description.map((desc: string, index: number) => {
                                     return (
-                                        <div key={index} className="text">
+                                        <p key={index} className="text">
                                             {desc}
-                                        </div>
+                                        </p>
                                     )
                                 })
                             }
